@@ -1,0 +1,26 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>innerHTML</title>
+	<style>
+		#capa1 {
+			background-color:yellow;
+			width:200px; 
+			height:50px; 
+			text-align:center;
+		}
+	</style>
+	<script>
+		
+		function anadeHtml() {
+			document.getElementById("capa1").innerHTML+= "<button>Nuevo botón</button>"; 
+		}
+	</script>
+</head>
+	<body>
+		<div id="capa1" >
+			<a href="#" onclick="anadeHtml()">Pulsa en este enlace</a>
+		</div>
+	</body>
+</html>
